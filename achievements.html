@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements – German Learning Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: { 500: '#f97316', 600: '#ea580c', 700: '#c2410c' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-black antialiased">
+  <header class="site-header text-white sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/logo.png" alt="German Learning Hub" class="h-10 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="hidden font-bold text-lg text-orange-500">GLH</span>
+      </a>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg hover:bg-white/10" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav id="nav-menu" class="hidden md:flex md:items-center md:gap-1 absolute md:relative top-16 left-0 right-0 md:top-0 bg-black md:bg-transparent px-4 py-4 md:py-0">
+        <a href="index.html" class="px-3 py-2 rounded-lg hover:text-orange-500 hover:bg-white/5 transition-colors">Home</a>
+        <a href="about.html" class="px-3 py-2 rounded-lg hover:text-orange-500 hover:bg-white/5 transition-colors">About</a>
+        <a href="courses.html" class="px-3 py-2 rounded-lg hover:text-orange-500 hover:bg-white/5 transition-colors">Courses</a>
+        <a href="achievements.html" class="px-3 py-2 rounded-lg text-orange-500 font-medium bg-white/5">Achievements</a>
+        <a href="courses.html#courses" class="nav-apply px-4 py-2 rounded-lg">Apply Now</a>
+        <a href="contact.html" class="px-3 py-2 rounded-lg hover:text-orange-500 hover:bg-white/5 transition-colors">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-muted min-h-[60vh]">
+    <div class="max-w-4xl mx-auto px-4 py-16">
+      <p class="section-label mb-2">Our impact</p>
+      <h1 class="page-title text-3xl md:text-4xl font-bold text-black mb-12">Achievements</h1>
+
+      <section class="mb-14">
+        <h2 class="text-xl font-bold text-black mb-3 flex items-center gap-2"><span class="w-1 h-6 bg-orange-500 rounded-full"></span> Student Results</h2>
+        <p class="text-gray-700 mb-6">Our students consistently achieve their goals—from passing A1–B2 exams to using German in work and study.</p>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="stat-box">
+            <p class="stat-value">95%+</p>
+            <p class="text-sm text-gray-600 mt-1">Completion rate</p>
+          </div>
+          <div class="stat-box">
+            <p class="stat-value">500+</p>
+            <p class="text-sm text-gray-600 mt-1">Students trained</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-14">
+        <h2 class="text-xl font-bold text-black mb-3 flex items-center gap-2"><span class="w-1 h-6 bg-orange-500 rounded-full"></span> Certifications</h2>
+        <p class="text-gray-700 mb-5">We prepare students for recognized certificates and offer completion certificates for our courses.</p>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-orange-600 font-semibold text-sm shadow-sm">A1 Certificate</span>
+          <span class="px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-orange-600 font-semibold text-sm shadow-sm">A2 Certificate</span>
+          <span class="px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-orange-600 font-semibold text-sm shadow-sm">B1 Certificate</span>
+          <span class="px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-orange-600 font-semibold text-sm shadow-sm">B2 Certificate</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-black mb-3 flex items-center gap-2"><span class="w-1 h-6 bg-orange-500 rounded-full"></span> Gallery</h2>
+        <p class="text-gray-700 mb-5">Moments from our academy.</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <button class="group block overflow-hidden rounded-lg p-0 border-0 bg-transparent" data-gallery-src="./assets/images/photo1.jpg">
+            <img src="./assets/images/photo1.jpg" alt="Achievement 1" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200">
+          </button>
+          <button class="group block overflow-hidden rounded-lg p-0 border-0 bg-transparent" data-gallery-src="./assets/images/photo2.jpg">
+            <img src="./assets/images/photo2.jpg" alt="Achievement 2" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200">
+          </button>
+          <button class="group block overflow-hidden rounded-lg p-0 border-0 bg-transparent" data-gallery-src="./assets/images/photo3.jpg">
+            <img src="./assets/images/photo3.jpg" alt="Achievement 3" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200">
+          </button>
+          <button class="group block overflow-hidden rounded-lg p-0 border-0 bg-transparent" data-gallery-src="./assets/images/photo4.jpg">
+            <img src="./assets/images/photo4.jpg" alt="Achievement 4" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200">
+          </button>
+          <button class="group block overflow-hidden rounded-lg p-0 border-0 bg-transparent" data-gallery-src="./assets/images/photo5.jpg">
+            <img src="./assets/images/photo5.jpg" alt="Achievement 5" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200">
+          </button>
+          <button class="group block overflow-hidden rounded-lg p-0 border-0 bg-transparent" data-gallery-src="./assets/images/photo1.jpg">
+            <img src="./assets/images/photo1.jpg" alt="Achievement 6" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200">
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer text-white py-10 px-4 mt-16">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-gray-400 text-sm">&copy; German Learning Hub. All rights reserved.</p>
+      <div class="flex gap-6 text-sm">
+        <a href="index.html" class="text-gray-400 hover:text-orange-500 transition-colors">Home</a>
+        <a href="contact.html" class="text-gray-400 hover:text-orange-500 transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

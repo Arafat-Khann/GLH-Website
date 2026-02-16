@@ -1,0 +1,23 @@
+Web 2/
+  index.html
+  about.html
+  courses.html
+  achievements.html
+  contact.html
+  course-a1.html
+  course-a2.html
+  course-b1.html
+  course-b2.html
+  assets/
+    logo.png          (add your logo; see LOGO-README.txt)
+    LOGO-README.txt
+    js/
+      modal.js
+      main.js
+
+Replace in project:
+  DATE_PLACEHOLDER       -> admission date (course pages)
+  PHYSICAL_FORM_LINK_PLACEHOLDER -> physical application URL (course pages)
+  ONLINE_FORM_LINK_PLACEHOLDER   -> online application URL (course pages)
+  contact.html: PHONE_PLACEHOLDER, EMAIL_PLACEHOLDER, ADDRESS_PLACEHOLDER
+  contact.html: form action "https://formspree.io/f/YOUR_FORM_ID" -> your Formspree ID
